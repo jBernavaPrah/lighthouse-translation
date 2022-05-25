@@ -3,7 +3,6 @@
 namespace JBernavaPrah\LighthouseTranslation;
 
 use GraphQL\Error\Error;
-use GraphQL\Executor\Values;
 use GraphQL\Type\Definition\ResolveInfo;
 use GraphQL\Type\Definition\Type;
 use Nuwave\Lighthouse\Schema\TypeRegistry;

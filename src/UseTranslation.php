@@ -11,6 +11,12 @@ use Illuminate\Support\Collection;
 trait UseTranslation
 {
 
+    /**
+     * Indicate what are the columns that will have the translations.
+     * Those columns will be automatically casted by Translate class.
+     *
+     * @return array
+     */
     abstract protected function translationColumns(): array;
 
     public function initializeUseTranslation(): void
