@@ -11,11 +11,9 @@ use GraphQL\Language\Parser;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\ServiceProvider;
-use JBernavaPrah\LighthouseTranslation\Services\TranslatorService;
 use Nuwave\Lighthouse\Events\ManipulateAST;
 use Nuwave\Lighthouse\Events\RegisterDirectiveNamespaces;
 use Nuwave\Lighthouse\Schema\AST\ASTHelper;
-use Nuwave\Lighthouse\Schema\RootType;
 
 class LighthouseTranslationServiceProvider extends ServiceProvider
 {
@@ -26,11 +24,8 @@ class LighthouseTranslationServiceProvider extends ServiceProvider
     {
 
 
-        $this->app->singleton(TranslatorService::class);
         $this->app->singleton(UnionTranslateResolveType::class);
         $this->app->singleton(Localize::class);
-        // register the resolver to lang
-        // register the resolver to enable-disable
 
     }
 

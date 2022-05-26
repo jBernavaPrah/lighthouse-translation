@@ -3,18 +3,11 @@
 namespace JBernavaPrah\LighthouseTranslation;
 
 use Closure;
-use GraphQL\Error\Error;
-use GraphQL\Language\AST\NonNullTypeNode;
-use GraphQL\Language\AST\TypeNode;
-use GraphQL\Type\Definition\Directive;
 use GraphQL\Type\Definition\ResolveInfo;
 use Illuminate\Support\Collection;
-use JBernavaPrah\LighthouseTranslation\Services\TranslatorService;
-use JBernavaPrah\LighthouseTranslation\UnionTranslateResolveType;
 use Nuwave\Lighthouse\ClientDirectives\ClientDirective;
 use Nuwave\Lighthouse\Schema\AST\ASTHelper;
 use Nuwave\Lighthouse\Schema\Directives\BaseDirective;
-use Nuwave\Lighthouse\Schema\RootType;
 use Nuwave\Lighthouse\Schema\Values\FieldValue;
 use Nuwave\Lighthouse\Support\Contracts\FieldMiddleware;
 use Nuwave\Lighthouse\Support\Contracts\GraphQLContext;
