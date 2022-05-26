@@ -37,4 +37,19 @@ class TranslateTest extends UnitTest
 
     }
 
+    function test_return_null_if_null_value(){
+
+
+        $model = new class extends Model {
+
+        };
+
+        $castingClass = Translate::castUsing([]);
+
+        $this->assertEquals(null, $castingClass->set($model, "name", null, []));
+        $this->assertEquals(null, $castingClass->get($model, "name", null, []));
+
+
+    }
+
 }
