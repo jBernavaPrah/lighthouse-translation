@@ -241,10 +241,6 @@ foo @localize(lang: \"it\")  {
 other
 bar {
     name {
-        ... on Translation {
-            text
-            lang
-        }
         ... on RawTranslation {
             data {
             text

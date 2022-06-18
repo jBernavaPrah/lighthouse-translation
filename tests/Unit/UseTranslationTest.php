@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use JBernavaPrah\LighthouseTranslation\Translate;
 use JBernavaPrah\LighthouseTranslation\UseTranslation;
 
-class TestUseTranslation extends UnitTest
+class UseTranslationTest extends UnitTest
 {
 
     function test_use_translation_correctly_add_casts()

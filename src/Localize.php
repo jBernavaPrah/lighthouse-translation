@@ -19,13 +19,14 @@ class Localize
 
     public function resolve(\Closure $closure, string $language): mixed
     {
-        return Arr::first($closure(), fn(Translate $array) => $array->lang === $language);
+
+        $result = $closure();
+        if (is_null($result)) {
+            return null;
+        }
+
+        return Arr::first($result, fn(Translate $array) => $array->lang === $language);
     }
-
-
-
-
-
 
 
 }
